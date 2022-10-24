@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://kit.fontawesome.com/17919b5b6b.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/header_nav_footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header id="idheader">
+    </header>
+    <nav id="idnav">
+    </nav>
+    <script src="js/header_nav.js"></script>
+    <main>
+        <div class="contact">
+            <div class="title">
+                <h1>Contacto</h1>
+                <br>
+                <hr>
+            </div>
+            <br>
+            <div>
+                <p>Realizá tus consultas sobre nuestros cursos, fechas de inscripción <br> o cualquier otra cosa.</p>
+            </div>
+            <br>
+            <div>
+                <form class="form-container" action="" name="formulario" id="formulario" method="get">
+                    <div class="each-field">
+                        <label for="nombre">Nombre<span> *</span> </label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="each-field">
+                        <label for="email">Email<span> *</span> </label>
+                        <input type="text" id="email" name="email" placeholder="Ingrese su email">
+                    </div>
+                    <div class="each-field">
+                        <label for="telefono">Teléfono<span> *</span> </label>
+                        <div class="phone">
+                            <input type="text" id="codigodearea" name="codigodearea" placeholder="C. área" size="4">
+                            <input type="text" id="telefono" name="telefono" placeholder="Teléfono de contacto">
+                        </div>
+                    </div>
+                    <div class="each-field">
+                        <label for="motivo">Seleccione motivo de la consulta<span> *</span>
+                        </label>
+                        <select name="motivo">
+                            <option name="elegir" value="elegir">Elegir motivo de consulta</option>
+                            <option name="fullstack" value="fullstack">Curso Full Stack Java</option>
+                            <option name="uxui" value="uxui">Curso Diseño UX/UI</option>
+                            <option name="testing " value="testing">Curso Inteligencia Artificial</option>
+                            <option name="otro" value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="each-field">
+                        <label for="mensaje">Consulta<span> *</span> </label>
+                        <textarea name="consulta" id="consulta" cols="45" rows="10"
+                            placeholder="Escriba su consulta..."></textarea>
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                    <div class="submit-btn">
+                        <input type="submit" value="ENVIAR">
+                    </div>
+                </form>
+                <script src="js/contact.js"></script>
+            </div>
+        </div>
+        <div class="address">
+            <div class="info-title">
+                <h3>DIRECCIÓN</h3>
+            </div>
+            <div class="map-card">
+                <div class="address-field">
+                    <p>AV. PASEO COLÓN 850, CABA</p>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d976.1783702305622!2d-58.36911773112324!3d-34.617824959798675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d46ec44845%3A0x3eb89dbb218b24c6!2sAv.%20Paseo%20Col%C3%B3n%20850%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1664679970582!5m2!1ses-419!2sar"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a href="https://mapa.buenosaires.gob.ar/comollego?hasta=Paseo+Colon+Av.+850" class="guide-button"
+                    target="_blank">Cómo llego</a>
+            </div>
+        </div>
+        <div class="email-phone">
+            <div class="info-title">
+                <h3>E-MAIL</h3>
+            </div>
+            <div class="info-text">
+                <p>info@liskovcademy.com</p>
+            </div>
+            <br>
+            <div class="info-title">
+                <h3>TELÉFONO</h3>
+            </div>
+            <div class="info-text">
+                <p> +54 (11) 4343-0968 / 4343-2775 / 528-50401 </p>
+            </div>
+        </div>
+    </main>
+    <footer id="idfooter">
+    </footer>
+    <div class="copy-right">
+        <p>Copyright &copy; 2022</p>
+    </div>
+    <script src="js/footer.js"></script>
+</body>
+</html>
