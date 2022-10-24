@@ -1,0 +1,30 @@
+main{
+    width: 100%;
+    margin: auto;
+    padding-top: 50%;
+    padding-bottom: 60%;
+}
+
+h1{
+    text-align: center;
+}
+
+h1 i {
+    font-size: 80px;
+    color: #4287f5;
+}
+
+@media screen and (min-width: 768px) {
+    main{
+        padding-top: 40%;
+        padding-bottom: 40%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+}
