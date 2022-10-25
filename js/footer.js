@@ -20,3 +20,27 @@ let footer = `
         </div>
 `
 document.getElementById("idfooter").innerHTML = footer
+
+
+let copyright = `<p>
+Copyright &copy;2022
+<br>
+Estamos en el día número <a id="data"></a> del año. 
+</p>   
+`
+
+document.getElementById("copyright").innerHTML = copyright
+
+
+let url = 'http://worldtimeapi.org/api/timezone/America/Argentina/Buenos_Aires';
+fetch(url)
+    .then( response => response.json() )
+    .then( data => mostrarData(data) )
+    .catch( error => console.log(error) )
+
+const mostrarData = (data) => {
+    console.log(data)
+    let body = ""   
+       body+=`${data.day_of_year}`
+    document.getElementById('data').innerHTML = body
+}
